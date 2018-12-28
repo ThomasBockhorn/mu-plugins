@@ -9,7 +9,8 @@ function projects_post_type()
             'add_new_item' => 'Add New Project',
             'edit_item' => 'Edit Project',
             'add_items' => 'All Projects',
-            'singular_name' => 'Project'
+            'singular_name' => 'Project',
+            'show_in_nav_menus' => true
         ),
         'menu_icon' => 'dashicons-format-aside',
         'supports' => array(
