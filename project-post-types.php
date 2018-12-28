@@ -11,7 +11,13 @@ function projects_post_type()
             'add_items' => 'All Projects',
             'singular_name' => 'Project'
         ),
-        'menu_icon' => 'dashicons-format-aside'
+        'menu_icon' => 'dashicons-format-aside',
+        'supports' => array(
+            'title',
+            'thumbnail',
+            'comments',
+            'editor'
+        )
     ));
 }
 add_action('init', 'projects_post_type');
