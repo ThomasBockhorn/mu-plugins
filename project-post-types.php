@@ -4,6 +4,8 @@ function projects_post_type()
 {
     register_post_type('project', array(
         'public' => true,
+        'has_archive' => true,
+        'hierarchical' => true,
         'labels' => array(
             'name' => 'Projects',
             'add_new_item' => 'Add New Project',
@@ -17,7 +19,14 @@ function projects_post_type()
             'title',
             'thumbnail',
             'comments',
-            'editor'
+            'editor',
+            'author',
+            'excerpt',
+            'page-attributes',
+            'custom-fields',
+            'post-formats',
+            'revisions',
+            'trackbacks'
         )
     ));
 }
